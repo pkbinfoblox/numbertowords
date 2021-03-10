@@ -35,7 +35,6 @@ var tenwords = [10]string{
 const maxNumber = 99999
 
 //the purpose of this function is to Convert is the function to convert the  number to words in english
-
 func Convert(number int) (string, error) {
 	if number < 0 || number > maxNumber {
 		return "", errors.New("The number is not valid")
