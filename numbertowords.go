@@ -1,3 +1,4 @@
+// Thispackage the English words for number input
 package numbertowords
 
 import "errors"
@@ -30,12 +31,13 @@ var tenwords = [10]string{
 	"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
 }
 
-const MaxNumber = 99999
+//this is the max number and this program validates
+const maxNumber = 99999
 
-//the number to words package will convert the input number to string
+//the purpose of this function is to Convert is the function to convert the  number to words in english
 
 func Convert(number int) (string, error) {
-	if number < 0 || number > 99999 {
+	if number < 0 || number > maxNumber {
 		return "", errors.New("The number is not valid")
 	}
 
