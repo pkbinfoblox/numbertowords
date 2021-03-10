@@ -32,7 +32,7 @@ var tenwords = [10]string{
 }
 
 //this is the max number and this program validates
-const maxNumber = 99999
+const MaxNumber = 99999
 
 //the purpose of this function is to Convert is the function to convert the  number to words in english
 func Convert(number int) (string, error) {
